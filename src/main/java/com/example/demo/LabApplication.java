@@ -14,7 +14,7 @@ public class LabApplication {
 
 		TeamRepository repository = context.getBean(TeamRepository.class);
 
-		repository.add(new Team("FC Barcelona", "La Liga", 24));
+		repository.add(new Team("Sevilla FC", "La Liga", 24));
 
 		System.out.println(repository.getByKey("FC Barcelona").getLeague());
 
