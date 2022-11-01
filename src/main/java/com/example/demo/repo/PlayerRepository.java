@@ -4,10 +4,7 @@ import com.example.demo.datastore.DataStore;
 import com.example.demo.entities.Player;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 @Repository
 public class PlayerRepository implements ObjectRepository<Player, Integer> {
@@ -27,6 +24,8 @@ public class PlayerRepository implements ObjectRepository<Player, Integer> {
     public Optional<Player> findByKey(Integer id) {
         return store.findPlayer(id);
     }
+
+    public List<Player> findByTeam(String teamName) { return store.findPlayersByTeam(teamName); }
 
     @Override
     public ArrayList<Player> findAll() {

@@ -36,11 +36,13 @@ public class CommandLine implements CommandLineRunner {
         System.out.println("1. Add player");
         System.out.println("2. Find player");
         System.out.println("3. Find all players");
-        System.out.println("4. Delete player");
-        System.out.println("5. Add team");
-        System.out.println("6. Find team");
-        System.out.println("7. Find all teams");
-        System.out.println("8. Exit");
+        System.out.println("4. Find all players from team");
+        System.out.println("5. Delete player");
+        System.out.println("6. Add team");
+        System.out.println("7. Find team");
+        System.out.println("8. Find all teams");
+        System.out.println("9. Delete team");
+        System.out.println("10. Exit");
 
         String task = scan.nextLine();
 
@@ -55,15 +57,15 @@ public class CommandLine implements CommandLineRunner {
                     System.out.println("Team - " + value.getTeam().getName());
                     System.out.println("ID - " + value.getId() + "\n");
                 });
-                System.out.println();
                 break;
-            case "4":
+            case "5":
                 System.out.println("ID to delete:");
                 Integer id = Integer.valueOf(scan.nextLine());
 
                 playerService.delete(id);
+                System.out.println();
                 break;
-            case "5":
+            case "6":
                 System.out.println("Set name : ");
                 String name = scan.nextLine();
                 System.out.println("Set league : ");
@@ -76,8 +78,10 @@ public class CommandLine implements CommandLineRunner {
                         .league(league)
                         .points(points)
                         .build());
+
+                System.out.println("Team was added correctly");
                 break;
-            case "6":
+            case "7":
                 System.out.println("Name : ");
                 String teamName = scan.nextLine();
 
@@ -92,10 +96,10 @@ public class CommandLine implements CommandLineRunner {
                     System.out.println("Team not found");
                 }
                 break;
-            case "7":
+            case "8":
                 teamService.findAll().forEach(System.out::println);
                 break;
-            case "8":
+            case "10":
                 exit(0);
                 break;
         }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -24,6 +25,8 @@ public class PlayerService {
     public Optional<Player> findByKey(Integer id) {
         return repository.findByKey(id);
     }
+
+    public List<Player> findByTeam(String teamName) { return repository.findByTeam(teamName); }
 
     public ArrayList<Player> findAll() {
         return repository.findAll();

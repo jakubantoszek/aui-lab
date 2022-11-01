@@ -41,6 +41,12 @@ public class DataStore {
         return new ArrayList<>(players);
     }
 
+    public synchronized List<Player> findPlayersByTeam(String teamName) {
+        return players.stream().filter(
+                player -> Objects.equals(player.getTeam().getName(), teamName)
+        ).toList();
+    }
+
     public synchronized Optional<Player> findPlayer(Integer id) {
         return players.stream()
                 .filter(player -> player.getId().equals(id))

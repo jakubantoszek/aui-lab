@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="test">
+    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="List all players">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/CommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CommandLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/datastore/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/datastore/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/PlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/PlayerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/CommandLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/CommandLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/datastore/DataStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/datastore/DataStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repo/PlayerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repo/PlayerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/service/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/service/PlayerService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667316858416</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="List all players">
+      <created>1667320298155</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667320298155</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="List all players" />
+    <option name="LAST_COMMIT_MESSAGE" value="List all players" />
   </component>
 </project>
