@@ -24,7 +24,7 @@ public class CommandLine implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         while(true){
             System.out.println("Choose task:");
             chooseTask();
@@ -59,7 +59,7 @@ public class CommandLine implements CommandLineRunner {
                 });
                 break;
             case "5":
-                System.out.println("ID to delete:");
+                System.out.println("ID of player to delete:");
                 Integer id = Integer.valueOf(scan.nextLine());
 
                 playerService.delete(id);
@@ -71,7 +71,7 @@ public class CommandLine implements CommandLineRunner {
                 System.out.println("Set league : ");
                 String league = scan.nextLine();
                 System.out.println("Set points : ");
-                Integer points = Integer.valueOf(scan.nextLine());
+                int points = Integer.parseInt(scan.nextLine());
 
                 teamService.add(Team.builder()
                         .name(name)
@@ -95,13 +95,37 @@ public class CommandLine implements CommandLineRunner {
                 else{
                     System.out.println("Team not found");
                 }
+                System.out.println();
                 break;
             case "8":
-                teamService.findAll().forEach(System.out::println);
+                teamService.findAll().forEach(
+                        team -> {
+                            System.out.println("Name - " + team.getName());
+                            System.out.println("League - " + team.getLeague());
+                            System.out.println("Points - " + team.getPoints() + "\n");
+                        }
+                );
+                break;
+            case "9":
+                System.out.println("Name of team to delete:");
+                String team_name = scan.nextLine();
+
+                if(playerService.findByTeam(team_name).isEmpty()){
+                    System.out.println("Team doesn't exist");
+                }
+                else{
+                    playerService.findByTeam(team_name).forEach(
+                            player -> playerService.delete(player.getId())
+                    );
+                    teamService.delete(team_name);
+                }
+                System.out.println();
                 break;
             case "10":
                 exit(0);
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + task);
         }
     }
 }
