@@ -40,17 +40,29 @@ public class CommandLine implements CommandLineRunner {
         System.out.println("5. Add team");
         System.out.println("6. Find team");
         System.out.println("7. Find all teams");
+        System.out.println("8. Exit");
 
         String task = scan.nextLine();
 
         switch(task){
             case "3":
-                playerService.findAll().forEach(System.out::println);
+                if(playerService.findAll().isEmpty())
+                    System.out.println("Players not found\n");
+                else playerService.findAll().forEach(value -> {
+                    System.out.println("Name - " + value.getName());
+                    System.out.println("Appearances - " + value.getAppearances());
+                    System.out.println("Average rating - " + value.getAverageRating());
+                    System.out.println("Team - " + value.getTeam().getName());
+                    System.out.println("ID - " + value.getId() + "\n");
+                });
+                System.out.println();
+                break;
             case "4":
                 System.out.println("ID to delete:");
                 Integer id = Integer.valueOf(scan.nextLine());
 
                 playerService.delete(id);
+                break;
             case "5":
                 System.out.println("Set name : ");
                 String name = scan.nextLine();
@@ -64,13 +76,28 @@ public class CommandLine implements CommandLineRunner {
                         .league(league)
                         .points(points)
                         .build());
+                break;
             case "6":
-                System.out.println("Set name : ");
+                System.out.println("Name : ");
                 String teamName = scan.nextLine();
 
-                teamService.findByKey(teamName);
+                if(teamService.findByKey(teamName).isPresent())
+                {
+                    Team value = teamService.findByKey(teamName).get();
+                    System.out.println("Name - " + value.getName());
+                    System.out.println("League - " + value.getLeague());
+                    System.out.println("Points - " + value.getPoints());
+                }
+                else{
+                    System.out.println("Team not found");
+                }
+                break;
             case "7":
                 teamService.findAll().forEach(System.out::println);
+                break;
+            case "8":
+                exit(0);
+                break;
         }
     }
 }
