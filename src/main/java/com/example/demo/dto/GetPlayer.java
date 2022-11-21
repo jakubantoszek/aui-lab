@@ -19,7 +19,7 @@ public class GetPlayer {
     private double averageRating;
     private String team;
 
-    public static Function<Player, GetPlayer> dtoToEntity() {
+    public static Function<Player, GetPlayer> entityToDto() {
         return request -> GetPlayer.builder()
                 .id(request.getId())
                 .name(request.getName())

@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Fix errors">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/CreatePlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/CreateTeam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetTeam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/UpdatePlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/UpdateTeam.java" afterDir="false" />
+    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Lab 2 - Task 2 (Part 1)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetPlayers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetPlayersFromTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetTeams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetTeam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/dto/GetPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dto/GetPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/dto/GetTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dto/GetTeam.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669048969242</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab 2 - Task 2 (Part 1)">
+      <created>1669053226442</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669053226442</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +171,7 @@
     <MESSAGE value="Command line update" />
     <MESSAGE value="Lab 2 - Task 1" />
     <MESSAGE value="Fix errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix errors" />
+    <MESSAGE value="Lab 2 - Task 2 (Part 1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 2 - Task 2 (Part 1)" />
   </component>
 </project>

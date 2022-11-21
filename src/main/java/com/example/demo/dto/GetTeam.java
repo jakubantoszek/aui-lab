@@ -17,7 +17,7 @@ public class GetTeam {
     private String league;
     private int points;
 
-    public static Function<Team, GetTeam> dtoToEntity() {
+    public static Function<Team, GetTeam> entityToDto() {
         return request -> GetTeam.builder()
                 .name(request.getName())
                 .league(request.getLeague())
