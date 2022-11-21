@@ -17,8 +17,8 @@ public class PlayerService {
         this.repository = repository;
     }
 
-    public void add(Player p) {
-        repository.save(p);
+    public Player add(Player p) {
+        return repository.save(p);
     }
 
     public Optional<Player> findByKey(Integer id) {
@@ -27,6 +27,10 @@ public class PlayerService {
 
     public List<Player> findAll() {
         return repository.findAll();
+    }
+
+    public void update(Player player) {
+        repository.save(player);
     }
 
     public void delete(Integer id) {

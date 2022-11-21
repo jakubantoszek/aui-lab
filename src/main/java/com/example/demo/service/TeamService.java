@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.entities.Player;
 import com.example.demo.entities.Team;
 import com.example.demo.repo.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,8 @@ public class TeamService {
     }
 
     @Transactional
-    public void add(Team t) {
-        repository.save(t);
+    public Team add(Team t) {
+        return repository.save(t);
     }
 
     public Optional<Team> findByName(String name) {
@@ -29,6 +30,10 @@ public class TeamService {
 
     public List<Team> findAll() {
         return repository.findAll();
+    }
+
+    public void update(Team team) {
+        repository.save(team);
     }
 
     public void delete(String name) {

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Lab 2 - Task 2 (Part 2)">
+    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Lab 2 - Task 3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/PlayerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/CommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/CommandLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/ObjectRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/PlayerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repo/TeamRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/PlayerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/TeamService.java" afterDir="false" />
     </list>
@@ -155,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669054690850</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lab 2 - Task 3">
+      <created>1669056897408</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669056897408</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +183,7 @@
     <MESSAGE value="Fix errors" />
     <MESSAGE value="Lab 2 - Task 2 (Part 1)" />
     <MESSAGE value="Lab 2 - Task 2 (Part 2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 2 - Task 2 (Part 2)" />
+    <MESSAGE value="Lab 2 - Task 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 2 - Task 3" />
   </component>
 </project>
