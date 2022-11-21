@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Lab 2 - Task 1">
+    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Fix errors">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/CreatePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/CreateTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/GetTeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/UpdatePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dto/UpdateTeam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/LabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/LabApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/LabApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/LabApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilderImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilderImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +61,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
@@ -129,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669048371513</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix errors">
+      <created>1669048969242</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669048969242</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +163,7 @@
     <MESSAGE value="Delete team" />
     <MESSAGE value="Command line update" />
     <MESSAGE value="Lab 2 - Task 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 2 - Task 1" />
+    <MESSAGE value="Fix errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix errors" />
   </component>
 </project>
