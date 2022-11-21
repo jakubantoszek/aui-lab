@@ -84,9 +84,9 @@ public class CommandLine implements CommandLineRunner {
                 System.out.println("ID : ");
                 int playerId = Integer.parseInt(scan.nextLine());
 
-                if(playerService.findByKey(playerId).isPresent())
+                if(playerService.findById(playerId).isPresent())
                 {
-                    Player value = playerService.findByKey(playerId).get();
+                    Player value = playerService.findById(playerId).get();
                     System.out.println("Name - " + value.getName());
                     System.out.println("Appearances - " + value.getAppearances());
                     System.out.println("Average rating - " + value.getAverageRating());

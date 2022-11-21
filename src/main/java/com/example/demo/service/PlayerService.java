@@ -21,7 +21,7 @@ public class PlayerService {
         return repository.save(p);
     }
 
-    public Optional<Player> findByKey(Integer id) {
+    public Optional<Player> findById(Integer id) {
         return repository.findById(id);
     }
 

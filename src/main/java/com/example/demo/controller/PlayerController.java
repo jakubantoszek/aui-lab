@@ -39,13 +39,13 @@ public class PlayerController {
 
     @GetMapping("{id}")
     public ResponseEntity<GetPlayer> getPlayer(@PathVariable("id") Integer id){
-        return playerService.findByKey(id)
+        return playerService.findById(id)
                .map(result -> ResponseEntity.ok(GetPlayer.entityToDto().apply(result)))
                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping
-    public ResponseEntity<Void> createCar(@RequestBody CreatePlayer request, UriComponentsBuilder builder){
+    public ResponseEntity<Void> createPlayer(@RequestBody CreatePlayer request, UriComponentsBuilder builder){
         Player player = CreatePlayer
                 .dtoToEntity(name -> teamService.findByName(name).orElseThrow())
                 .apply(request);
@@ -55,8 +55,8 @@ public class PlayerController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<Void> deleteCar(@PathVariable("id") Integer id){
-        Optional<Player> player = playerService.findByKey(id);
+    public ResponseEntity<Void> deletePlayer(@PathVariable("id") Integer id){
+        Optional<Player> player = playerService.findById(id);
         if(player.isPresent()){
             playerService.delete(player.get().getId());
             return ResponseEntity.accepted().build();
@@ -67,8 +67,8 @@ public class PlayerController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Void> updateCar(@RequestBody UpdatePlayer request, @PathVariable("id") Integer id){
-        Optional<Player> player = playerService.findByKey(id);
+    public ResponseEntity<Void> updatePlayer(@RequestBody UpdatePlayer request, @PathVariable("id") Integer id){
+        Optional<Player> player = playerService.findById(id);
         if(player.isPresent()){
             UpdatePlayer.dtoToEntity().apply(player.get(), request);
             playerService.update(player.get());
