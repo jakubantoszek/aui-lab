@@ -5,7 +5,6 @@ import com.example.demo.repo.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,20 +18,18 @@ public class PlayerService {
     }
 
     public void add(Player p) {
-        repository.add(p);
+        repository.save(p);
     }
 
     public Optional<Player> findByKey(Integer id) {
-        return repository.findByKey(id);
+        return repository.findById(id);
     }
 
-    public List<Player> findByTeam(String teamName) { return repository.findByTeam(teamName); }
-
-    public ArrayList<Player> findAll() {
+    public List<Player> findAll() {
         return repository.findAll();
     }
 
     public void delete(Integer id) {
-        repository.delete(id);
+        repository.deleteById(id);
     }
 }

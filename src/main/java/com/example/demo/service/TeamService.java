@@ -5,7 +5,8 @@ import com.example.demo.repo.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
+import javax.transaction.Transactional;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,19 +18,20 @@ public class TeamService {
         this.repository = repository;
     }
 
+    @Transactional
     public void add(Team t) {
-        repository.add(t);
+        repository.save(t);
     }
 
-    public Optional<Team> findByKey(String name) {
-        return repository.findByKey(name);
+    public Optional<Team> findByName(String name) {
+        return repository.findById(name);
     }
 
-    public ArrayList<Team> findAll() {
+    public List<Team> findAll() {
         return repository.findAll();
     }
 
     public void delete(String name) {
-        repository.delete(name);
+        repository.deleteById(name);
     }
 }
