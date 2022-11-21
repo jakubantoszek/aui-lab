@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Command line update">
-      <change afterPath="$PROJECT_DIR$/checklist.txt" afterDir="false" />
+    <list default="true" id="06594e92-9f45-4856-a009-ddc7d5f0fe7e" name="Changes" comment="Lab 2 - Task 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/LabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/LabApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/LabApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/LabApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player$PlayerBuilderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team$TeamBuilderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/Team.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669041126912</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lab 2 - Task 1">
+      <created>1669048371513</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669048371513</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +149,7 @@
     <MESSAGE value="Find all players from team" />
     <MESSAGE value="Delete team" />
     <MESSAGE value="Command line update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Command line update" />
+    <MESSAGE value="Lab 2 - Task 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 2 - Task 1" />
   </component>
 </project>

@@ -26,6 +26,6 @@ public class Team {
     private int points;
 
     @ToString.Exclude
-    @OneToMany(mappedBy = "players", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "team", cascade = CascadeType.ALL)
     private List<Player> squad;
 }
